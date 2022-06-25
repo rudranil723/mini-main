@@ -11,6 +11,7 @@ import warnings
 from gtts import gTTS
 
 
+
 #funtion to recognise what the user is saying and can be called whenever the user wants to say anything
 def speechrecognition():
     r = sr.Recognizer()
@@ -68,7 +69,7 @@ def speechpassword():
             speechfuntions(True)
             break
         if vp != i:
-            print("\nretry")
+            minisay("retry")
             speechpassword()
 
 
