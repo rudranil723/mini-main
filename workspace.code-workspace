@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "..\\pyshop"
+	}
+],
+  "settings": {
+    "files.autoSave": "afterDelay"
+  }
+}
