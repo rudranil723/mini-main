@@ -10,7 +10,7 @@ from main import wakeword
 import warnings
 from gtts import gTTS
 
-
+warnings.filterwarnings("ignore")
 
 #funtion to recognise what the user is saying and can be called whenever the user wants to say anything
 def speechrecognition():
