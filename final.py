@@ -1,6 +1,7 @@
 # mi_ni will be created here how and when idk
 
 # funtion for input using keyboard
+import os
 import pyttsx3
 from code import speak
 from email.mime import audio
