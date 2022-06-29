@@ -1,7 +1,7 @@
 # mi_ni will be created here how and when idk
 
 # funtion for input using keyboard
-import os
+import nltk 
 import pyttsx3
 from code import speak
 from email.mime import audio
@@ -11,7 +11,6 @@ from main import wakeword
 import warnings
 from gtts import gTTS
 
-warnings.filterwarnings("ignore")
 
 #funtion to recognise what the user is saying and can be called whenever the user wants to say anything
 def speechrecognition():
@@ -62,7 +61,7 @@ def speechpassword():
     voicepassword = speechrecognition()
     #converting the entered password/ wakeword to lower case to doudge bugs XD
     vp = voicepassword.lower()
-    wakewords = ["mini", "hey mini", "hi mini", "ok","ok mini"]
+    wakewords = ["mini", "hey mini", "hi mini", "ok","ok mini","hello","Ok"]
     #checking the password said with the list of wake word
     for i in wakewords:
         if vp == i:
