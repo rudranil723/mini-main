@@ -1,7 +1,6 @@
 # mi_ni will be created here how and when idk
 
 # funtion for input using keyboard
-import nltk 
 import pyttsx3
 from code import speak
 from email.mime import audio
@@ -11,6 +10,7 @@ from main import wakeword
 import warnings
 from gtts import gTTS
 
+warnings.filterwarnings('ignore')  #this will avoid unnessary warnings
 
 #funtion to recognise what the user is saying and can be called whenever the user wants to say anything
 def speechrecognition():
