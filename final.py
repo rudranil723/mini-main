@@ -105,7 +105,7 @@ def password():
     if passwordvariable != 1 or passwordvariable !=2:
         print("wrong entry, please retry")
         password()
-iko
+
 # main funtion
 if __name__ == '__main__':
     password()
