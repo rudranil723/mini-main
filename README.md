@@ -10,3 +10,8 @@ Thank you for your time.
 </sub>
 									
 - Tech-Stack:  Pyhton
+
+***TO SET UP THE PROJECT***
+
+- Install all the necessary libraries 
+- run the code from main/ final.py file
