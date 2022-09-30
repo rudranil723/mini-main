@@ -1,0 +1,23 @@
+# initial imports required for the project
+
+import pyttsx3
+from code import speak
+from email.mime import audio
+from django.template import engines
+import speech_recognition as sr
+import warnings
+from gtts import gTTS
+
+# some extra imports to perform some actions
+
+import webbrowser
+import datetime
+import wikipedia
+
+
+# some more necessary libraries
+from cgitb import text
+from email.mime import audio
+import os
+import random
+import calendar
