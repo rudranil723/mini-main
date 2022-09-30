@@ -9,6 +9,7 @@ It runs and tested on windows only as of now.
 Initially, I started working on mini keeping in mind the world famous AI “JARVIS” from marvel movies. It’s my dream to make mini perform like it.
 Thank you for your time.
 </sub>
+		
 									
 - Tech-Stack:  Pyhton
 
