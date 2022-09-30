@@ -13,5 +13,5 @@ Thank you for your time.
 
 ***TO SET UP THE PROJECT***
 
-- Install all the necessary libraries 
+- Install all the necessary libraries listed in requirments.txt
 - run the code from main/ final.py file
