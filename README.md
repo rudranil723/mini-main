@@ -1,6 +1,6 @@
 #							**mini**
 
-*** Project mini: ***
+***Project mini:***
 
 <sub> 
 - Project mini is AI development project, the aim is to build a AI named MINI that is capable of receiving input data/ commands both as a sound command or dynamic input, and function accordingly. 
