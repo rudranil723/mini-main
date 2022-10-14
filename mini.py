@@ -1,4 +1,5 @@
 
+import assets.noteapp as noteapp
 from turtle import *
 from cgitb import text
 from email.mime import audio
@@ -32,26 +33,8 @@ def password(text):
 
 
 def calculations():
-    print('what do you want to calculate?')
-    print('addition substraction multiplication divid')
-    print('   1          2             3           4')
-    calculationvariable = input()
-    if calculationvariable == '1':
-        print('please eter two numbers you wish to add: ')
-        num1, num2 = map(int, input().split(' '))
-        print('result: '+(num1+num2))
-    elif calculationvariable == '2':
-        print('please eter two numbers you wish to add: ')
-        num1, num2 = map(int, input().split(' '))
-        print('result: '+(num1-num2))
-    elif calculationvariable == '3':
-        print('please eter two numbers you wish to add: ')
-        num1, num2 = map(int, input().split(' '))
-        print('result: '+(num1*num2))
-    elif calculationvariable == '4':
-        print('please eter two numbers you wish to add: ')
-        num1, num2 = map(int, input().split(' '))
-        print('result: '+(num1/num2))
+    os.system('python assets/calculator.py')
+
 
 # date and time funtion
 
@@ -60,7 +43,6 @@ def dateandtime():
     today = date.today()
     today = today.strftime("%B %d %Y")
     print("today's date: ", today)
- 
 
 
 # funtion to draw heart
@@ -77,18 +59,32 @@ def heart():
     forward(133)
     end_fill()
 
+# note pad app
+
+
+def notepad():
+    os.system('python assets/noteapp.py')
+
+
+# i want this command givinf part to be controlled by machine learning
 
 def tasks(term):
     if term == 1:
         print('please chose which tasks you want me to perform')
-        print('1 for doing calculations \n 2. for know the date and time \n 3.for aming heart')
+        print('\n 1. for doing calculations \n 2. for know the date and time \n 3. for drawing heart \n 4. for launching notepadd app')
         a = int(input())
         if a == 1:
             calculations()
+            tasks(1)
         if a == 2:
             dateandtime()
+            tasks(1)
         if a == 3:
             heart()
+            tasks(1)
+        if a == 4:
+            notepad()
+            tasks(1)
 
 
 allowences = 3
@@ -98,13 +94,12 @@ print(" ")
 print("please select how you want to run me(mi_ni)")
 print(" ")
 print("Enter: 1: for text command")
-print("  or   2: for voice command")
-print(" ")
+print("  or   2: for voice command \n")
 while allowences > 0:
-    c = int(input('enter choice: '))
+    c = int(input('\n enter choice: '))
     if c == 1:
         print('going forward with text commands')
-        t = input('enter password: ')
+        t = input('\n enter password: ')
         password(t)
         break
     if c == 2:
