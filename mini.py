@@ -47,17 +47,7 @@ def dateandtime():
 
 # funtion to draw heart
 def heart():
-    bgcolor("yellow")
-    color("red")
-    begin_fill()
-    pensize(3)
-    left(50)
-    forward(133)
-    circle(50, 200)
-    right(140)
-    circle(50, 200)
-    forward(133)
-    end_fill()
+    os.system('python assets/heart.py')
 
 # note pad app
 
@@ -66,12 +56,13 @@ def notepad():
     os.system('python assets/noteapp.py')
 
 
-# i want this command givinf part to be controlled by machine learning
+# i want this command to be controlled by machine learning
 
 def tasks(term):
     if term == 1:
         print('please chose which tasks you want me to perform')
-        print('\n 1. for doing calculations \n 2. for know the date and time \n 3. for drawing heart \n 4. for launching notepadd app')
+        print('\n 1. for doing calculations \n 2. for know the date and time \n 3. for drawing heart \n 4. for launching notepadd app \n 5. EXIT')
+        print("\n Enter choise: ")
         a = int(input())
         if a == 1:
             calculations()
@@ -85,6 +76,8 @@ def tasks(term):
         if a == 4:
             notepad()
             tasks(1)
+        if a == 5:
+            print('goodbye')
 
 
 allowences = 3
