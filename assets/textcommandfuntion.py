@@ -13,6 +13,7 @@ def tasks(term):
             os.system('python assets/text-funtion/calculator.py')
             tasks(1)
         if a == 2:
+            #this funtion is not working
             os.system('python assets/text-funtion/datetime.py')
             tasks(1)
         if a == 3:

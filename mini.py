@@ -3,7 +3,7 @@ from turtle import *
 from cgitb import text
 from email.mime import audio
 from socket import TCP_NODELAY
-#import speech_recognition as sr
+import speech_recognition as sr
 import os
 from gtts import gTTS
 import datetime
@@ -18,6 +18,7 @@ from datetime import date
 
 # text password funtion to check wether the password entered is correct or not
 
+
 def password(text):
     wakewords = ['mini', 'hey mini', 'hello mini']
     for phrase in wakewords:
@@ -31,24 +32,25 @@ def password(text):
 
 # main funtion
 
+
 def main():
     allowences = 3
-    print(" ")
-    print(":::::_WELLCOME USER_:::::")
-    print(" ")
-    print("please select how you want to run me(mi_ni)")
-    print(" ")
+    print("\n:::::_WELLCOME USER_:::::\n")
+    print("please select how you want to run me(mi_ni)\n")
     print("Enter: 1: for text command")
     print("  or   2: for voice command \n")
     while allowences > 0:
         c = int(input('\n enter choice: '))
         if c == 1:
-            print('going forward with text commands')
+            print('\ngoing forward with text commands')
             t = input('\n enter password: ')
             password(t)
             break
         if c == 2:
-            # recordaudio(t)  # for calling in the voice control funtions
+            print('\nGoing forward with voice control password: \n')
+            print('please say any of the wake-words\n')
+            # for calling in the voice control funtion py
+            os.system('python assets/speechcommandfuntion.py')
             break
         else:
             print('invalid input, try again ')
