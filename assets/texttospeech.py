@@ -6,12 +6,10 @@ language = 'en'
 
 
 def main():
-    def command(speak):
-        t1 = gtts.gTTS("thank you, i hope you get well soon")
-        t1.save("mini.mp3")
-        playsound("mini.mp3")
 
-        command(speak)
+    t1 = gtts.gTTS("hey dipu please come back")
+    t1.save("mini.mp3")
+    playsound("mini.mp3")
 
 
 if __name__ == "__main__":

@@ -24,13 +24,22 @@
 - activate the virtual enviroment
   <br>
   <img src="images/photo1.png">
-
+  <br>
 - now use the command **_cd ../.._**
 - run the command by typing **_mini.py_** and pressing enter
   <br>
   <img src="images/photo3.png">
   <br>
 - enter _1_ to enter **Text command** or enter _2_ for **voice commands**
+  <br>
 - <h4> when we processed with text input we decide to run and command the AI with user commands entered from keyword<h4>
+  <br>
+- you will be asked to enter a password among diffent wakewords as passwords
+  **wakewords = ['mini', 'hey mini', 'hello mini']**
+  <br>
+  <img src="images/photo4.png">
+  - this are the funtions _mi_ni_ can perform right now
 
-
+<br>
+<br>
+<h3>And when you enter *2* it initiates the voice controll feature, i.e you can use voice commands to run the code and give input </h3>
