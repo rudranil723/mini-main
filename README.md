@@ -1,6 +1,8 @@
-#							**mini**
+### <h1 align="center">MINI</h1>
 
-***Project mini:***
+<img src="images/mini.png">
+
+<h2 align="center"> Project MI_NI 2022</h2>
 
 <sub> 
 - Project mini is AI development project, the aim is to build a AI named MINI that is capable of receiving input data/ commands both as a sound command or dynamic input, and function accordingly. 
@@ -10,10 +12,11 @@ Initially, I started working on mini keeping in mind the world famous AI “JARV
 Thank you for your time.
 </sub>
 		
-									
-- Tech-Stack:  Pyhton
+<h2 align="center"> - Tech-Stack:  Pyhton</h2>
 
-***TO SET UP THE PROJECT***
+**_TO SET UP THE PROJECT_**
 
-- Install all the necessary libraries listed in requirments.txt
-- run the code from mini.py
+- After you dwonload the code file in your local device
+- activate the virtual enviroment
+  <img src="images/photo1.png">
+
