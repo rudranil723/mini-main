@@ -1,6 +1,7 @@
 ### <h1 align="center">MI_NI</h1>
 
-<img src="images/mini.png" style="align=center">
+<img src="images/mini.png" style="align:center">
+
 
 <h2 align="center"> Project MI_NI 2022</h2>
 
