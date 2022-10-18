@@ -39,10 +39,9 @@
   <br>
   <img align="center" src="images/photo4.png">
   <br>
-  - this are the funtions _mi_ni_ can perform right now
+  - <div><h4>this are the funtions _mi_ni_ can perform right now</h4></div>
     <br>
-    <img align="center" src="images/photo5.png">
-
-<br>
-<br>
-<h3>And when you enter *2* it initiates the voice controll feature, i.e you can use voice commands to run the code and give input </h3>
+        <img align="center" src="images/photo5.png">
+    <br>
+    <br>
+    <h3>And when you enter *2* it initiates the voice controll feature, i.e you can use voice commands to run the code and give input </h3>
