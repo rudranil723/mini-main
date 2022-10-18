@@ -36,8 +36,9 @@
   <br>
 - you will be asked to enter a password among diffent wakewords as passwords
   **wakewords = ['mini', 'hey mini', 'hello mini']**
-  <br>
   <img src="images/photo4.png">
+  <br>
+  <img src="images/photo5.png">
   - this are the funtions _mi_ni_ can perform right now
 
 <br>
