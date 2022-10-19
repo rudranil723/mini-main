@@ -45,3 +45,8 @@
     <br>
     <br>
     <h3>And when you enter *2* it initiates the voice controll feature, i.e you can use voice commands to run the code and give input </h3>
+
+<br>
+<div><h2>when the **mini.py** file runs it calls the **assets/textcommandfuntion.py** which further calls the funtions from **text-funtion/ funtions** to perform different funtions</h2></div>
+
+## <a href="https://rudranilshil.me/"><div align="center"> contributed By: Rudranil Shil (rudy) 🔥</div></a>
