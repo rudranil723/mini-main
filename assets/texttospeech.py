@@ -7,7 +7,7 @@ language = 'en'
 
 def main():
 
-    t1 = gtts.gTTS("hey dipu please come back")
+    t1 = gtts.gTTS("hey this is mini")
     t1.save("mini.mp3")
     playsound("mini.mp3")
 
