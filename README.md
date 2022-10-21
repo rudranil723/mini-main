@@ -9,7 +9,7 @@
 - Project built on the principles of **Artificial Intelligence** and **Machine Learning**
 - Project mini is an AI development project, the aim is to build an AI named MINI that is capable of receiving input data/ commands both as a sound command or dynamic input, and function accordingly.
   <br>
-- I am designing mini to make the user’s life easy, it will be able to do a various range of tasks from performing simple calculations to finding location, searching any information on the web, help the user perform and follow his/her routine, and lots more.
+- I am designing mini to make the user’s life easy, it will be able to do a various range of tasks from performing simple calculations to finding location, searching any information on the web, helping the user perform and follow his/her routine, and lots more.
 - It runs and is tested on **_windows_** only as of now.
 - Initially, I started working on mini keeping in mind the world famous AI **JARVIS** from marvel movies. It’s my dream to make mini perform like it.
   <br>
