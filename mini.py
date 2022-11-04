@@ -1,4 +1,7 @@
+# main file of mi_ni 2.0
+
 #import assets.noteapp as noteapp
+from logging import warning
 from turtle import *
 from cgitb import text
 from email.mime import audio
@@ -6,29 +9,23 @@ from socket import TCP_NODELAY
 import speech_recognition as sr
 import os
 from gtts import gTTS
-import datetime
-import random
+# import datetime
+# import random
 import warnings
 from toml import TomlDecodeError
-import wikipedia
-import calendar
+# import wikipedia
+# import calendar
 from cgi import print_arguments
 from traceback import print_tb
 from datetime import date
+import passwordcheck
+import ear
+import mouth
 
 # text password funtion to check wether the password entered is correct or not
 
+warnings.filterwarnings("ignore")
 
-def password(text):
-    wakewords = ['mini', 'hey mini', 'hello mini']
-    for phrase in wakewords:
-        if phrase == text:
-            print('welcome user')
-            os.system('python assets/textcommandfuntion.py')
-            break
-        else:
-            print('password entered is wrong,bye')
-            break
 
 # main funtion
 
@@ -44,13 +41,17 @@ def main():
         if c == 1:
             print('\ngoing forward with text commands')
             t = input('\n enter password: ')
-            password(t)
+            passwordcheck.text_password(t)
             break
         if c == 2:
             print('\nGoing forward with voice control password: \n')
             print('please say any of the wake-words\n')
             # for calling in the voice control funtion py
-            os.system('python assets/speechcommandfuntion.py')
+            # key = os.system('python assets/speechtotext_ear.py')
+            # voice='okay going forward with voice control'
+            mouth.minisay(voice='okay going foward with voice control')
+            key = ear.minihear()
+            passwordcheck.speech_password(key)
             break
         else:
             print('invalid input, try again ')

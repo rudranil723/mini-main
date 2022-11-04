@@ -1,6 +1,6 @@
 # Import turtle package
 import turtle
-
+from turtle import *
 # Creating a turtle object(pen)
 pen = turtle.Turtle()
 

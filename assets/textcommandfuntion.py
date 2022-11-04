@@ -6,14 +6,14 @@ import os
 def tasks(term):
     if term == 1:
         print('please chose which tasks you want me to perform')
-        print('\n 1. for doing calculations \n 2. for know the date and time \n 3. for drawing heart \n 4. for launching notepadd app \n 5. EXIT')
+        print('\n 1. for doing calculations \n 2. for know the date and time \n 3. for drawing heart \n 4. for launching notepadd app \n 5. EXIT \n 6.RESTART(not yet working)')
         print("\n Enter choise: ")
         a = int(input())
         if a == 1:
             os.system('python assets/text-funtion/calculator.py')
             tasks(1)
         if a == 2:
-            #this funtion is not working
+            # this funtion is not working
             os.system('python assets/text-funtion/datetime.py')
             tasks(1)
         if a == 3:
@@ -24,6 +24,9 @@ def tasks(term):
             tasks(1)
         if a == 5:
             print('goodbye')
+        # i want to implement restert in the code but dont know how to go out of the current folder and call mini.py
+        # if a == 6:
+        #     os.system('python mini-main/mini')
 
 
 tasks(1)
