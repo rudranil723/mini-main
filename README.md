@@ -40,13 +40,24 @@
   <img align="center" src="images/photo4.png">
   <br>
   - <div><h4>these are the functions _mi_ni_ can perform right now</h4></div>
+        <br>
+           <img align="center" src="images/photo5.png">
+        <br>
+        <br>
+        <h3>And when you enter *2* it initiates the voice control feature, i.e you can use voice commands to run the code and give input </h3>
     <br>
-       <img align="center" src="images/photo5.png">
+    <div>
+    <h4><b>features preste right now are: </b></h4>
+    <h3>1: calculator </h3>
+    <img src="images/cal.png" align="center">
+    - A full funtioning calculator with API
     <br>
     <br>
-    <h3>And when you enter *2* it initiates the voice control feature, i.e you can use voice commands to run the code and give input </h3>
-
-<br>
-<div><h2>when the **mini.py** file runs it calls the **assets/textcommandfuntion.py** which further calls the functions from **text-funtion/ funtions** to perform different functions</h2></div>
+    <h3>A note pad: </h3>
+    <img src="images/note.png">
+    - a fully funtioning notepad app and reminder with API
+    </h2></div>
+    <br>
+    <div><h2>when the **mini.py** file runs it calls the **assets/textcommandfuntion.py** which further calls the functions from **text-funtion/ funtions** to perform different functions</h2></div>
 
 ## <a href="https://rudranilshil.me/"><div align="center"> contributed By: Rudranil Shil (rudy) 🔥</div></a>
