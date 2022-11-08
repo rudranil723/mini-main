@@ -1,6 +1,7 @@
 # file to check if the user has entered the right password or not
 import os
 
+#python file to cheack password or wake-word by the user input both by terxt ad speech
 
 def text_password(key):
     # you can use any phrase as passowrd just the word mini needs to be present
@@ -21,5 +22,5 @@ def speech_password(key):
     wakewords = ['mini', 'hey mini', 'hello mini', 'hello', 'hey', 'mini mini']
     for phrase in wakewords:
         #we have to check this down part 
-        if key == phrase:
+        if key in phrase:
             os.system('python assets/textcommandfuntion.py')
