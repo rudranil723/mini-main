@@ -5,6 +5,7 @@ import os
 language = 'en'
 
 
+
 def minisay(voice):
     t1 = gtts.gTTS(voice)
     # t1 = gtts(text=voice, lang=language, slow=False)
@@ -12,5 +13,5 @@ def minisay(voice):
     playsound("mini.mp3")
 
 
-# key = 'hey buddy its me mini here'
-# minisay(key)
+# this will fix the voice to null to make it re-run
+voice = ''

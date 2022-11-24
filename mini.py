@@ -33,6 +33,7 @@ warnings.filterwarnings("ignore")
 def main():
     # the user is allowed to enter choice only 3 times
     allowences = 3
+    # mouth.minisay(voice="welcome user")
     print("\n:::::_WELLCOME USER_:::::\n")
     print("please select how you want to run me(mi_ni)\n")
     print("Enter: 1: for text command")
@@ -55,7 +56,6 @@ def main():
             # calling the mouth.py
             # making mini say by calling the mouth.py ,after which the user shall say the password/ wake word phrase
             mouth.minisay(voice='okay going foward with voice control')
-
             # calling the ear.py file to make mini listen the input by the user
             key = ear.minihear()
             # sending the password/ wake-word to the passwordcheck file to check the file
