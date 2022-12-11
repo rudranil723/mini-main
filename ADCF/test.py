@@ -34,6 +34,15 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 
 nltk.word_tokenize('text')
 text = "rudy is my name"
+arr = word_tokenize(text)
+for i in arr:
+    if i == 'name':
+        print('ok')
+
+print(sent_tokenize(text))
+print(word_tokenize(text))
+
+
 # text = "Natural language processing (NLP) is a field " + \
 #     "of computer science, artificial intelligence " + \
 #     "and computational linguistics concerned with " + \
@@ -49,6 +58,3 @@ text = "rudy is my name"
 #     "and machine perception, managing human-" + \
 #     "computer dialog systems, or some combination " + \
 #     "thereof."
-
-print(sent_tokenize(text))
-print(word_tokenize(text))
