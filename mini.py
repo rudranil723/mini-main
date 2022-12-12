@@ -46,6 +46,7 @@ def main():
             print('\nGoing forward with text commands')
             t = input('\n enter password: ')
             # calling in the passwordcheck.py file to check wether the phrase entered by the user contains the password/ wake-word
+            # passwordcheck.py file location - mini-main/passwordcheck.py
             passwordcheck.text_password(t)
             break
 
@@ -55,10 +56,12 @@ def main():
 
             # calling the mouth.py
             # making mini say by calling the mouth.py ,after which the user shall say the password/ wake word phrase
+            # passwordcheck.py file location - mini-main/mouth.py
             mouth.minisay(voice='okay going foward with voice control')
             # calling the ear.py file to make mini listen the input by the user
             key = ear.minihear()
             # sending the password/ wake-word to the passwordcheck file to check the file
+            # passwordcheck.py file location - mini-main/passwordcheck.py
             passwordcheck.speech_password(key)
             break
 

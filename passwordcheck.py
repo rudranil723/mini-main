@@ -1,7 +1,8 @@
 # file to check if the user has entered the right password or not
 import os
 import mouth
-#python file to cheack password or wake-word by the user input both by terxt ad speech
+# python file to cheack password or wake-word by the user input both by terxt ad speech
+
 
 def text_password(key):
     # you can use any phrase as passowrd just the word mini needs to be present
@@ -9,7 +10,8 @@ def text_password(key):
     for phrase in wakewords:
         # if phrase == text:
         if phrase in key:
-            print('welcome user')
+            print('\n welcome user')
+            # file location - mini-main/assets/textcommandfuntion.py
             os.system('python assets/textcommandfuntion.py')
             break
         else:
@@ -23,7 +25,8 @@ def speech_password(key):
     for phrase in wakewords:
         if key in phrase:
             mouth.minisay(voice='welcome buddy, what do you want me to do?')
+            # file location - mini-main/assets/textcommandfuntion.py
+            # because as of now we don't have voice funtions
             os.system('python assets/textcommandfuntion.py')
         else:
             mouth.minisay(voice='sorry retry again')
-            
