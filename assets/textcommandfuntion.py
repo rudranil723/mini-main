@@ -3,17 +3,30 @@ from asyncio import tasks
 import os
 import sys
 import arrayformationusing_nltk
+import keyword_search
 
 
 def tasks(term):
     if term == 1:
-        print('please chose which tasks you want me to perform')
+        # print('please chose which tasks you want me to perform')
         # print('\n 1. for doing calculations \n 2. to know the date and time \n 3. for drawing heart \n 4. for launching notepadd app \n 5. EXIT \n 6.RESTART(not yet working)')
         # print("\n Enter choise: ")
         # here is where i want to apply machine learning so thata the mini can perform multiplke funtuoin withoutr a list
-        a = input('enter: ')
+        a = input('\n user : ')
         b = arrayformationusing_nltk.arrayformationby_nltk(a)
         print(b)
+        for i in b:
+            cal = ['calculation', 'calculator', 'add',
+                   'substract', 'divide', 'multiply']
+            if i in cal:
+                os.system('python assets/text-funtion/calculator.py')
+                tasks(1)
+            dt = ['date', 'time', 'date time', 'clock']
+            if i in dt:
+                os.system('python assets/text-funtion/date-timefuntion.py')
+                tasks(1)
+
+
         # if a == 1:
         #     os.system('python assets/text-funtion/calculator.py')
         #     tasks(1)
@@ -31,8 +44,6 @@ def tasks(term):
         #     print('goodbye')
         # i want to implement restert in the code but dont know how to go out of the current folder and call mini.py
         # if a == 6:
-            # sys.path.insert(0, '/mini-main/mini.py')
-            # os.system('python ')
-
-
+        # sys.path.insert(0, '/mini-main/mini.py')
+        # os.system('python ')
 tasks(1)
