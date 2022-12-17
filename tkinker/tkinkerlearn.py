@@ -1,12 +1,17 @@
 from tkinter import *
 
 root = Tk()
+e = Entry(root, width=50)
+e.pack()
 
-# creating a label widget
-# myLabel1 = Label(root, text='hellow world').grid(row=0, column=0)
-# myLabel2 = Label(root, text="i am rudy").grid(row=1, column=5)
 
-mybutton = Button(root, text='start', padx=50)
+def myClick():
+    hello = 'hellow'+e.get()
+    myLabel = Label(root, text="hellow " + e.get())
+    myLabel.pack()
 
+
+myButton = Button(root, text='enter name', command=myClick)
+myButton.pack()
 
 root.mainloop()
