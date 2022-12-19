@@ -16,7 +16,7 @@ def tasks(term):
         pa = arrayformationusing_nltk.arrayformationby_nltk(a)
 
         for i in pa:
-
+    
             # key words  that the user must use in his phase or command to activate calculator funtion
             cal = ['calculation', 'calculator', 'add',
                    'substract', 'divide', 'multiply', 'cal']
