@@ -1,23 +1,48 @@
+# This will import all the widgets
+# and modules which are available in
+# tkinter and ttk module
 from tkinter import *
+from tkinter.ttk import *
 
-root = Tk()
-# e = Entry(root, width=50)
-# e.pack()
+# creates a Tk() object
+master = Tk()
 
-
-# def myClick():
-#     myLabel = Label(root, text="hellow " + e.get())
-#     myLabel.pack()
-
-
-# # myButton = Button(root, text='enter name', command=myClick)
-# # myButton.pack()
+# sets the geometry of main
+# root window
+master.geometry("200x200")
 
 
-b = Button(root, text="Enter", width=10, height=2)
-b.config()
-b.pack(side=LEFT)
+# function to open a new window
+# on a button click
+def openNewWindow():
+	
+	# Toplevel object which will
+	# be treated as a new window
+	newWindow = Toplevel(master)
 
-c = Button(root, text="Clear", width=10, height=2)
-c.pack(side=LEFT)
-root.mainloop()
+	# sets the title of the
+	# Toplevel widget
+	newWindow.title("New Window")
+
+	# sets the geometry of toplevel
+	newWindow.geometry("200x200")
+
+	# A Label widget to show in toplevel
+	Label(newWindow,
+		text ="This is a new window").pack()
+
+
+label = Label(master,
+			text ="This is the main window")
+
+label.pack(pady = 10)
+
+# a button widget which will open a
+# new window on button click
+btn = Button(master,
+			text ="Click to open a new window",
+			command = openNewWindow)
+btn.pack(pady = 10)
+
+# mainloop, runs infinitely
+mainloop()
