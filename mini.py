@@ -15,7 +15,6 @@ from toml import TomlDecodeError
 from cgi import print_arguments
 from traceback import print_tb
 from datetime import date
-import tkinter
 
 # importing sub-files required for the project
 import passwordcheck

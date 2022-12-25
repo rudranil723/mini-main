@@ -8,7 +8,6 @@ def text_password(key):
     # you can use any phrase as passowrd just the word mini needs to be present
     wakewords = ['mini', 'hey mini', 'hello mini']
     for phrase in wakewords:
-        # if phrase == text:
         if phrase in key:
             print('\n welcome user')
             # file location - mini-main/assets/textcommandfuntion.py

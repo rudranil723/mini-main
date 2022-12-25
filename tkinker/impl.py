@@ -6,23 +6,25 @@ root = Tk()
 
 def textwindow():
     txtw = Tk()
-    # textWindow = Toplevel(txtw)
-    txt = Label(txtw, text='okkk')
-    txt.pack()
+    txtw.geometry("600x600")
+    txtw.minsize(400, 400)
+    #one input for the password then check that
+
     txtw.configure(bg="green")
     txtw.mainloop()
 
 
 def speechwindow():
-    #spWindow = Toplevel(root)
-    txtw = Tk()
-    # textWindow = Toplevel(txtw)
-    txt = Label(txtw, text='okkk')
-    txt.pack()
-    txtw.configure(bg="green")
-    txtw.mainloop()
-    # declaring the main funtion
+    spw = Tk()
+    spw.geometry("600x600")
+    spw.minsize(400, 400)
 
+    
+    spw.configure(bg="blue")
+    spw.mainloop()
+
+
+# declaring the main funtion
 
 def main():
 
